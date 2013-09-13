@@ -20,7 +20,7 @@ angular.module('ngGcMetaPaginationService', [])
     };
 
     this.setMeta = function setMeta(data, headers) {
-      data.meta = self.parseHeaders(headers);
+      data.meta = self.parseHeaders(headers) || {};
       return data;
     };
 
